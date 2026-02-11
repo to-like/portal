@@ -15,12 +15,12 @@
 --text-color: #333;
 }
 body {
-font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+font-family: "Helvetica Neue", Arial, sans-serif;
 line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0;
 }
 header {
 background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
-color: white; padding: 4rem 1rem; text-align: center; box-shadow: 0 4px 15px rgba(255, 0, 119, 0.3);
+color: white; padding: 4rem 1rem; text-align: center;
 }
 .container {
 max-width: 900px; margin: -3rem auto 3rem; padding: 2.5rem;
@@ -28,26 +28,23 @@ background: white; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);
 }
 .status-badge {
 display: inline-block; background: white; color: var(--primary-color);
-padding: 0.3rem 1rem; border-radius: 50px; font-weight: bold; font-size: 0.9rem; margin-bottom: 1.5rem;
+padding: 0.3rem 1rem; border-radius: 50px; font-weight: bold; margin-bottom: 1.5rem;
 }
 h1 { margin: 0; font-size: 2.8rem; font-weight: 900; }
-h1 span { color: #fff; text-shadow: 2px 2px 0px var(--secondary-color); }
 .counter-box {
 background: var(--dark-color); color: var(--secondary-color);
 padding: 2rem; border-radius: 12px; text-align: center; margin: 2rem 0;
-border: 2px solid var(--secondary-color);
 }
-.counter-value { font-size: 2.5rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; }
+.counter-value { font-size: 2.5rem; font-weight: bold; color: white; }
 .feature-grid {
 display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2.5rem 0;
 }
 .feature-card {
-padding: 2rem; border: 2px solid #eee; border-radius: 12px; text-align: center; transition: 0.3s;
+padding: 2rem; border: 2px solid #eee; border-radius: 12px; text-align: center;
 }
-.feature-card:hover { transform: translateY(-10px); border-color: var(--primary-color); }
 .btn {
 display: inline-block; background: var(--primary-color); color: white;
-padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: bold;
+padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 10px;
 }
 footer { text-align: center; padding: 3rem; color: #888; }
 @media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } }
@@ -57,21 +54,18 @@ footer { text-align: center; padding: 3rem; color: #888; }
 
 <header>
 <div class="status-badge"><i class="fas fa-rocket"></i> 日本の「妄想」を「現実」に</div>
-<h1>妄<span>いいね！</span>委員会</h1>
+<h1>妄いいね！委員会</h1>
 <p>OPEN POLICY COLLABORATION</p>
 </header>
 
 <div class="container">
 <h2>「いいね！」から始まる、新しい国のカタチ。</h2>
-<p>私たちは、国民の「こうなったらいいな」という妄想を、デジタルとデータの力で現実に変えます。GitHubを通じて国家予算をデバッグし、あなたの手取りを増やします。</p>
+<p>私たちは、国民の「こうなったらいいな」という妄想を、デジタルとデータの力で現実に変えます。</p>
 
 </div>
 
 <footer>
-<p>&copy; 2026 妄いいね！委員会. 
-
-
- Powered by Digital Democracy & GitHub Pages</p>
+<p>&copy; 2026 妄いいね！委員会.</p>
 </footer>
 
 </body>
