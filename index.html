@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>妄いいね！委員会 | オープン・マニフェスト・プラットフォーム</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #ff0077; /* 「いいね！」のマゼンタ */
+            --secondary-color: #00d4ff; /* 自由な発想のシアン */
+            --dark-color: #2c3e50;
+            --bg-color: #f9f9fb;
+            --text-color: #333;
+        }
+        body {
+            font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+            line-height: 1.6; color: var(--text-color); background-color: var(--bg-color); margin: 0;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+            color: white; padding: 4rem 1rem; text-align: center; box-shadow: 0 4px 15px rgba(255, 0, 119, 0.3);
+        }
+        .container {
+            max-width: 900px; margin: -3rem auto 3rem; padding: 2.5rem;
+            background: white; border-radius: 15px; box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .status-badge {
+            display: inline-block; background: white; color: var(--primary-color);
+            padding: 0.3rem 1rem; border-radius: 50px; font-weight: bold; font-size: 0.9rem; margin-bottom: 1.5rem;
+        }
+        h1 { margin: 0; font-size: 2.8rem; font-weight: 900; }
+        h1 span { color: #fff; text-shadow: 2px 2px 0px var(--secondary-color); }
+        
+        /* シミュレーター・スタイル */
+        .counter-box {
+            background: var(--dark-color); color: var(--secondary-color);
+            padding: 2rem; border-radius: 12px; text-align: center; margin: 2rem 0;
+            border: 2px solid var(--secondary-color);
+        }
+        .counter-value { font-size: 2.5rem; font-weight: bold; font-family: 'Courier New', monospace; color: white; }
+
+        .feature-grid {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin: 2.5rem 0;
+        }
+        .feature-card {
+            padding: 2rem; border: 2px solid #eee; border-radius: 12px; text-align: center; transition: 0.3s;
+        }
+        .feature-card:hover { transform: translateY(-10px); border-color: var(--primary-color); }
+        
+        .btn {
+            display: inline-block; background: var(--primary-color); color: white;
+            padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: bold;
+        }
+        footer { text-align: center; padding: 3rem; color: #888; }
+        @media (max-width: 600px) { .feature-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="status-badge"><i class="fas fa-rocket"></i> 日本の「妄想」を「現実」に</div>
+    <h1>妄<span>いいね！</span>委員会</h1>
+    <p>OPEN POLICY COLLABORATION</p>
+</header>
+
+<div class="container">
+    <h2>「いいね！」から始まる、新しい国のカタチ。</h2>
+    <p>私たちは、国民の「こうなったらいいな」という妄想を、デジタルとデータの力で現実に変えます。GitHubを通じて国家予算をデバッグし、あなたの手取りを増やします。</p>
+
+    <div class="counter-box">
+        <h3 style="color: white; margin-top: 0;"><i class="fas fa-calculator"></i> 還元シミュレーター</h3>
+        <p style="font-size: 0.9rem;">特定された予算の無駄（総額）</p>
+        <div class="counter-value">¥ 1,240,500,000</div>
+        <div style="margin: 1rem 0; border-top: 1px dashed #444;"></div>
+        <p style="font-size: 0.9rem;">現役世代一人あたりの年間保険料 削減見込み</p>
+        <div class="counter-value" style="color: var(--secondary-color);">¥ 12,405</div>
+    </div>
+
+    <div class="feature-grid">
+        <div class="feature-card">
+            <div class="icon" style="font-size: 3rem; color: var(--primary-color);"><i class="fas fa-heart"></i></div>
+            <h3>予算の無駄に「ダメね！」</h3>
+            <p>不透明な基金や天下り。あなたが「おかしい」と思う項目を報告してください。</p>
+            <a href="./issues" class="btn">無駄を報告する</a>
+        </div>
+        <div class="feature-card">
+            <div class="icon" style="font-size: 3rem; color: var(--primary-color);"><i class="fas fa-chart-line"></i></div>
+            <h3>地域別マップ（案B）</h3>
+            <p>あなたの街で、手取りがいくら増えるか。地域別の還元予測を確認！</p>
+            <a href="#" class="btn">マップを見る</a>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2026 妄いいね！委員会. <br> Powered by Digital Democracy & GitHub Pages</p>
+</footer>
+
+</body>
+</html>
